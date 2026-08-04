@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BVSc & AH Attendance Tracker</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial,Helvetica,sans-serif;
+    background:linear-gradient(135deg,#4CAF50,#2196F3);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.container{
+    background:white;
+    width:350px;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 10px 20px rgba(0,0,0,.2);
+}
+
+h1{
+    color:#2c3e50;
+    font-size:28px;
+}
+
+button{
+    width:100%;
+    padding:15px;
+    margin:10px 0;
+    border:none;
+    border-radius:8px;
+    background:#2e7d32;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#1b5e20;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+<h1>BVSc & AH Attendance Tracker</h1>
+
+<h3>Select Your Year</h3>
+
+<button onclick="goToYear('1st')">1st Year</button>
+
+<button onclick="comingSoon()">2nd Year</button>
+
+<button onclick="comingSoon()">3rd Year</button>
+
+<button onclick="comingSoon()">4th Year</button>
+
+</div>
+
+<script>
+function goToYear(year){
+    if(year==="1st"){
+        window.location.href="firstyear.html";
+    }
+}
+
+function comingSoon(){
+    alert("This section will be added soon.");
+}
+</script>
+
+</body>
+</html>
